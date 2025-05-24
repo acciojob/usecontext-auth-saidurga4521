@@ -6,9 +6,9 @@ const ContextApi = () => {
     <div>
       <h1>Click on the checkbox to get authenticated</h1>
       {ishuman ? (
-        <p>you are now authenticated,you can proceed</p>
+        <p className="authText">you are now authenticated,you can proceed</p>
       ) : (
-        <p>you are not authenticated</p>
+        <p lassName="authText">you are not authenticated</p>
       )}
       <input
         type="checkbox"
