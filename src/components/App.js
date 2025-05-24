@@ -1,13 +1,15 @@
-
 import React from "react";
-import './../styles/App.css';
-
+import "./../styles/App.css";
+import AuthProvider from "./AuthProvider";
+import ContextApi from "./ContextApi";
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+      <AuthProvider>
+        <ContextApi />
+      </AuthProvider>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
